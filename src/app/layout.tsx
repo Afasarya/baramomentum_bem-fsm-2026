@@ -23,7 +23,6 @@ export default function RootLayout({
         {/* ─── COMING SOON OVERLAY ─────────────────────────────
             Remove <ComingSoon /> below when the site is ready to go live.
         ─────────────────────────────────────────────────────── */}
-        <ComingSoon />
         <SmoothScroll>
           <Navbar />
           <main className="relative min-h-screen">{children}</main>
