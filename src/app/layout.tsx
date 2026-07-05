@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import SmoothScroll from "@/components/providers/SmoothScroll";
-import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
   title: "BEM FSM UNDIP 2026 — Kabinet Bara Momentum",
@@ -20,14 +16,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className="bg-bara-bg-dark font-sans antialiased text-white">
-        {/* ─── COMING SOON OVERLAY ─────────────────────────────
-            Remove <ComingSoon /> below when the site is ready to go live.
-        ─────────────────────────────────────────────────────── */}
-        <SmoothScroll>
-          <Navbar />
-          <main className="relative min-h-screen">{children}</main>
-          <Footer />
-        </SmoothScroll>
+        {children}
       </body>
     </html>
   );

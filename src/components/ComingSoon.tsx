@@ -12,7 +12,7 @@ interface Particle {
 }
 
 /* ── Countdown hook ── */
-const LAUNCH_DATE = new Date("2026-07-12T08:17:00+07:00");
+const LAUNCH_DATE = new Date("2026-07-20T00:00:00+07:00");
 
 function useCountdown(target: Date) {
   const calc = () => {
