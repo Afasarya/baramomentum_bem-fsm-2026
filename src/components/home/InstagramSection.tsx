@@ -119,7 +119,7 @@ function InstagramCard({
             opacity: isLoaded ? 1 : 0,
             transition: "opacity 0.5s ease",
           }}
-          allowTransparency="true"
+          allowTransparency={true}
           scrolling="no"
           loading="lazy"
           onLoad={() => setIsLoaded(true)}
